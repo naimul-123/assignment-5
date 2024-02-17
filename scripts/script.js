@@ -1,0 +1,81 @@
+let selectedSeat= 0;
+const seats = document.querySelectorAll('.seat');
+// console.log(seats)
+seats.forEach((seat)=>{
+    seat.addEventListener('click', (e)=>{
+        selectedSeat ++
+
+
+        if(selectedSeat<=4){
+            const totalSelectedSeat= document.getElementById('totalSelectedSeat');
+            totalSelectedSeat.innerText= selectedSeat;
+            e.target.style.backgroundColor = "#1DD100"
+            e.target.style.color = "#FFFFFF"
+    
+            const seatNumber = e.target.innerText;
+            const div = document.createElement('div');
+            div.classList.add('flex');
+            div.classList.add('justify-between');
+            const p1 = document.createElement('p');
+            p1.innerText= seatNumber;
+            const p2 = document.createElement('p');
+            p2.innerText="Economy";
+            const p3 = document.createElement('p');
+            p3.innerText= "550";
+           div.appendChild(p1);
+           div.appendChild(p2);
+           div.appendChild(p3);
+           const selectedSeatSec = document.getElementById('selectedSeatSec');
+           selectedSeatSec.appendChild(div);
+           e.target.disabled= true;
+           totalPrice = selectedSeat*550;
+           document.getElementById('TotalPrice').innerText=totalPrice;
+           document.getElementById('grandTotal').innerText=totalPrice;
+           document.getElementById('avallabelSeat').innerText= 40 - selectedSeat;
+
+           if(selectedSeat===4){
+            document.getElementById('cuponSection').classList.remove('hidden')
+           }
+        }
+        else{
+            console.log("Selection limit over!")
+            return false;
+        }
+
+
+        // console.log(selectedSeat)
+    })
+})
+
+const cuponBtn = document.getElementById('cuponBtn');
+cuponBtn.addEventListener('click', ()=>{
+    const cuponName = document.getElementById('cuponId').value;
+    const totalPrice = parseInt(document.getElementById('TotalPrice').innerText);
+    if((cuponName === "NEW15") || (cuponName === "Couple 20")){
+
+        document.getElementById('discountSec').classList.remove('hidden');
+        document.getElementById('discountSec').classList.add('flex');
+
+        if(cuponName === "NEW15"){
+            const discount = totalPrice*0.15;
+            const grandTotal = totalPrice - discount;
+            document.getElementById('grandTotal').innerText=grandTotal;
+            document.getElementById('discount').innerText=discount;
+        }
+        else if(cuponName === "Couple 20"){
+            const discount = totalPrice*0.20;
+            const grandTotal = totalPrice - discount;
+            document.getElementById('grandTotal').innerText=grandTotal;
+            document.getElementById('discount').innerText=discount;
+        }
+        
+        document.getElementById('cuponSection').classList.add('hidden')
+        
+    }
+    
+    else{
+        alert('Invalid cupon code!')
+    }
+    // console.log(cuponName);
+})
+
