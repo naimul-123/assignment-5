@@ -8488,29 +8488,9 @@ html:has(.drawer-open.drawer-open) {
   margin-right: auto;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-24 {
   margin-top: 6rem;
   margin-bottom: 6rem;
-}
-
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .my-3 {
@@ -8518,9 +8498,19 @@ html:has(.drawer-open.drawer-open) {
   margin-bottom: 0.75rem;
 }
 
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-7 {
@@ -8645,6 +8635,10 @@ html:has(.drawer-open.drawer-open) {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-svh {
@@ -9233,20 +9227,20 @@ html:has(.drawer-open.drawer-open) {
   gap: 0.25rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -9589,6 +9583,10 @@ html:has(.drawer-open.drawer-open) {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -9599,6 +9597,10 @@ html:has(.drawer-open.drawer-open) {
 
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -9794,6 +9796,16 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(29 209 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#27AE60\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 174 96 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F2F1F1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 241 241 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F78C9C\] {
   --tw-bg-opacity: 1;
   background-color: rgb(247 140 156 / var(--tw-bg-opacity));
@@ -9946,6 +9958,10 @@ html:has(.drawer-open.drawer-open) {
   padding: 3rem;
 }
 
+.p-14 {
+  padding: 3.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -9968,6 +9984,11 @@ html:has(.drawer-open.drawer-open) {
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -9976,6 +9997,11 @@ html:has(.drawer-open.drawer-open) {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-80 {
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .py-16 {
@@ -9988,13 +10014,14 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 1rem;
 }
 
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pr-0 {
-  padding-right: 0px;
 }
 
 .pr-2 {
@@ -10086,6 +10113,11 @@ html:has(.drawer-open.drawer-open) {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -10094,11 +10126,6 @@ html:has(.drawer-open.drawer-open) {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-black {
@@ -10111,6 +10138,10 @@ html:has(.drawer-open.drawer-open) {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -10207,8 +10238,18 @@ html:has(.drawer-open.drawer-open) {
   color: rgb(29 209 0 / var(--tw-text-opacity));
 }
 
+.text-\[\#27AE60\] {
+  --tw-text-opacity: 1;
+  color: rgb(39 174 96 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-\[\#4A4A4A\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 74 74 / var(--tw-text-opacity));
 }
 
 .text-\[rgb\(3\2c 7\2c 18\)\] {
@@ -10665,6 +10706,11 @@ html:has(.drawer-open.drawer-open) {
 .hover\:text-\[\#1DD100\]:hover {
   --tw-text-opacity: 1;
   color: rgb(29 209 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#27AE60\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(39 174 96 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
