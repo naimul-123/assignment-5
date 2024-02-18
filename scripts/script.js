@@ -101,3 +101,16 @@ phnNumber.addEventListener('input', (e)=>{
     }
 })
 
+
+const nextBtn= document.getElementById('nextBtn');
+nextBtn.addEventListener('click', ()=>{
+    const mainPart = document.getElementById('mainPart');
+    const successModal = document.getElementById('successModal');
+    mainPart.classList.add('hidden');
+    successModal.classList.remove('hidden');
+})
+
+const continueBtn= document.getElementById('continueBtn');
+continueBtn.addEventListener('click', ()=>{
+    location.reload();
+})
