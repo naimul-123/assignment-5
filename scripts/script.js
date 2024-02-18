@@ -36,6 +36,16 @@ seats.forEach((seat)=>{
            if(selectedSeat===4){
             document.getElementById('cuponSection').classList.remove('hidden')
            }
+
+
+           const phnNumber = document.getElementById('phnNumber').value;
+           if(phnNumber.length>0 && selectedSeat>0){
+               document.getElementById('nextBtn').disabled=false;
+           }
+           else{
+               document.getElementById('nextBtn').disabled=true;
+           }
+           
         }
         else{
             console.log("Selection limit over!")
@@ -77,5 +87,17 @@ cuponBtn.addEventListener('click', ()=>{
         alert('Invalid cupon code!')
     }
     // console.log(cuponName);
+});
+
+const phnNumber =document.getElementById('phnNumber');
+phnNumber.addEventListener('input', (e)=>{
+    const selectedSeat = parseInt(document.getElementById('totalSelectedSeat').innerText);
+    const phnNumber = e.target.value;
+    if(phnNumber.length>0 && selectedSeat>0){
+        document.getElementById('nextBtn').disabled=false;
+    }
+    else{
+        document.getElementById('nextBtn').disabled=true;
+    }
 })
 
