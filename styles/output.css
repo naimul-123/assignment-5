@@ -9718,8 +9718,8 @@ html:has(.drawer-open.drawer-open) {
   border-right-width: 1px;
 }
 
-.border-r-2 {
-  border-right-width: 2px;
+.border-r-4 {
+  border-right-width: 4px;
 }
 
 .border-s {
@@ -9732,10 +9732,6 @@ html:has(.drawer-open.drawer-open) {
 
 .border-t-2 {
   border-top-width: 2px;
-}
-
-.border-r-4 {
-  border-right-width: 4px;
 }
 
 .border-solid {

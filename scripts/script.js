@@ -34,7 +34,7 @@ seats.forEach((seat)=>{
            document.getElementById('avallabelSeat').innerText= 40 - selectedSeat;
 
            if(selectedSeat===4){
-            document.getElementById('cuponSection').classList.remove('hidden')
+            document.getElementById('cuponSection').classList.remove('pointer-events-none')
            }
 
 
@@ -80,10 +80,13 @@ cuponBtn.addEventListener('click', ()=>{
         }
         
         document.getElementById('cuponSection').classList.add('hidden')
+        document.getElementById('discountSec').classList.remove('hidden')
+        document.getElementById('discountSec').classList.add('flex');
         
     }
     
     else{
+
         alert('Invalid cupon code!')
     }
     // console.log(cuponName);
