@@ -8653,12 +8653,20 @@ html:has(.drawer-open.drawer-open) {
   width: 3.5rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
 
 .w-52 {
   width: 13rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -9706,6 +9714,10 @@ html:has(.drawer-open.drawer-open) {
   border-bottom-width: 2px;
 }
 
+.border-b-\[3px\] {
+  border-bottom-width: 3px;
+}
+
 .border-e {
   border-inline-end-width: 1px;
 }
@@ -9966,6 +9978,10 @@ html:has(.drawer-open.drawer-open) {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-1 {
@@ -10782,6 +10798,14 @@ html:has(.drawer-open.drawer-open) {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:-top-16 {
+    top: -4rem;
+  }
+
   .lg\:block {
     display: block;
   }
