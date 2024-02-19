@@ -9734,6 +9734,10 @@ html:has(.drawer-open.drawer-open) {
   border-top-width: 2px;
 }
 
+.border-r-4 {
+  border-right-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -10809,6 +10813,10 @@ html:has(.drawer-open.drawer-open) {
   .lg\:rounded-t-\[88px\] {
     border-top-left-radius: 88px;
     border-top-right-radius: 88px;
+  }
+
+  .lg\:border-dashed {
+    border-style: dashed;
   }
 
   .lg\:p-16 {

@@ -92,7 +92,7 @@
           </div>
 
           <!-- Ticket booking section -->
-        <div  class="mx-auto max-w-[1440px] my-32 p-4 md:p-8 lg:p-16 xl:p-32 bg-[#F7F8F8] font-raleway rounded-t-2xl md:rounded-3xl lg:rounded-t-[88px] border-t-2 border-[#1DD100] ">
+        <div  id="ticketSection" class="mx-auto max-w-[1440px] my-32 p-4 md:p-8 lg:p-16 xl:p-32 bg-[#F7F8F8] font-raleway rounded-t-2xl md:rounded-3xl lg:rounded-t-[88px] border-t-2 border-[#1DD100] ">
             <!-- Header -->
             <div class="w-full lg:w-1/2 mx-auto space-y-4 my-6">
               <h2 class="text-center  font-bold mx-auto text-[40px] text-[#030712]">Sohag Paribahan</h2>
@@ -100,7 +100,7 @@
             </div>
 
 
-          <div class="flex flex-col lg:flex-row items-center justify-center gap-4 rounded-3xl bg-white">
+          <div  class="flex flex-col lg:flex-row items-center justify-center gap-4 rounded-3xl bg-white">
             <div class=" w-full lg:w-3/5  ">
               <div class="flex items-center justify-between gap-1">
                    <!-- bus info -->
@@ -150,8 +150,8 @@
             </div>
         </div>
          <!-- ticket section -->
-        <div id="ticketSection" class="my-7 flex flex-col lg:flex-row justify-around bg-white rounded-3xl">
-          <div class="border-r-2 border-dashed border-[rgba(3, 7, 18, 0.30)] px-4">
+        <div  class="my-7 flex flex-col lg:flex-row justify-around bg-white rounded-3xl">
+          <div class="border-none border-r-4 lg:border-dashed border-[rgba(3, 7, 18, 0.30)] px-4">
             <h4 class="text-2xl py-4 font-semibold text-[rgb(3,7,18)] ">Select your seat</h4>
             <div class="flex justify-between w-full border-dashed border-y-2 border-y-[#03071233] py-4">
               <div class="flex justify-start">
@@ -270,14 +270,14 @@
 
               <div class="flex justify-between border-dashed border-t-2 border-t-[#03071233]">
                 <p>Total Price</p>
-                <p>BDT <span id="TotalPrice"></span></p>
+                <p>BDT <span id="TotalPrice">0</span></p>
               </div>
 
-              <div id="discountSec" class="hidden justify-between border-dashed border-b-2 border-b-[#03071233]">
+              <div id="discountSec" class=" flex justify-between border-dashed border-b-2 border-b-[#03071233]">
                 <p>Discount</p>
                 <p>BDT -<span id="discount">0</span></p>
               </div>
-              <div id="cuponSection" class="hidden">
+              <div id="cuponSection" class="">
                 <label class="input pr-2 input-bordered flex items-center gap-2">
                   <input name="cuponName" id="cuponId" type="text" class="grow" placeholder="Have any copupon?" />
                   <button id="cuponBtn" class="bg-[#1DD100] text-white p-2 text-sm rounded-md ">Apply</button>
